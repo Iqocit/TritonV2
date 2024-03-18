@@ -1,0 +1,85 @@
+getgenv().Triton = { 
+    ['Configuration'] = {
+        ['Mouse Argument'] = 'UpdateMousePos', -- for fireserver 
+        ['Build'] = {},
+    },
+    ['Silent'] = {
+        ['Enabled'] = true,
+        ['Use Aimbot Target'] = true,
+        ['Type'] = 'Legit', -- Rage, Legit
+        ['Prediction'] = 0.13,
+        ['Part'] = 'HumanoidRootPart',
+        ['Method'] = 'Target Aim', -- silent aim, target aim
+        Keys = {
+            ['Silent Key'] = 'x',
+            ['Target Key'] = 'e'
+        },
+        ['Renders'] = {
+            ['Line'] = {
+                ['Visible'] = true,
+                ['Thickness'] = 1,
+                ['Transparency'] = 1,
+                ['Color'] = 255, 255, 255
+            }
+        },
+        FOV = {
+            ['Visible'] = true,
+            ['Radius'] = 100 * 3,
+            ['Filled'] = false,
+            ['Transparency'] = 1,
+            ['Thickness'] = 0.5,
+            ['Color'] = 255,255,255
+        },
+        ['Checks'] = {
+            ['Visible'] = true,
+            ['Wall'] = true,
+            ['Knocked'] = true,
+            ['Self Knocked'] = true,
+            ['Grabbed'] = true
+        },
+        ['Resolver'] = {
+            ['Enabled'] = false,
+            ['Resolver Method'] = "Recaclulate Position" -- Recalculate Position, Recaclulate Delta, Recalculate Mix
+        }
+    },
+    ['Aimbot'] = {
+        ['Enabled'] = true,
+        ['Part'] = "HumanoidRootPart",
+        ['Mode'] = 'Camera', -- Mouse, Camera
+        ['Targetting'] = {
+            ['Key'] = 'c',
+            ['Prediction'] = 0.13,
+            ['Smoothing'] = {
+                ['X'] = 1,
+                ['Y'] = 0.006531
+            },
+            ['Checks'] = {
+                ['Visible'] = true,
+                ['Wall'] = true,
+                ['Knocked'] = true,
+                ['Self Knocked'] = true,
+                ['Grabbed'] = true
+            },
+            ['Resolver'] = {
+                ['Enabled'] = false,
+                ['Resolver Method'] = "Recaclulate Position" -- Recalculate Position, Recaclulate Delta, Recalculate Mix
+            },
+            ['Renders'] = {
+                ['Line'] = {
+                    ['Visible'] = true,
+                    ['Thickness'] = 1,
+                    ['Transparency'] = 1,
+                    ['Color'] = 255, 255, 255
+                }
+            },
+        },
+        FOV = {
+            ['Visible'] = true,
+            ['Radius'] = 100 * 3,
+            ['Filled'] = false,
+            ['Transparency'] = 1,
+            ['Thickness'] = 0.5,
+            ['Color'] = 255,255,255
+        }
+    }
+}
